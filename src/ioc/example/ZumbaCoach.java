@@ -6,10 +6,6 @@ public class ZumbaCoach implements ICoaching {
     private String email;
     private int bicepCircumference;
 
-    public ZumbaCoach(){
-        System.out.println("Zumba");
-    }
-
     public void setEmail(String email) {
         this.email = email;
     }

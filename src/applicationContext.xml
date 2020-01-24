@@ -10,7 +10,7 @@
             <constructor-arg ref="adviceService"/>
      </bean>
     <bean id="adviceService"
-          class="ioc.example.BadAdvice ">
+          class="ioc.example.GoodAdvice ">
     </bean>
     <bean id="zumbaCoach"
           class="ioc.example.ZumbaCoach ">
