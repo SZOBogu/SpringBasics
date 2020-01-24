@@ -7,6 +7,7 @@ public class SpringHelloApp {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         ICoaching coach = context.getBean("coach", ICoaching.class);
         System.out.println(coach.getWorkout());
+        System.out.println(coach.getAdvice());
         context.close();
     }
 }

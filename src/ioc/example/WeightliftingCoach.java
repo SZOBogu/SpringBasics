@@ -12,4 +12,8 @@ public class WeightliftingCoach implements ICoaching{
     public String getWorkout(){
         return  "5x5 3pl8 squat";
     }
+
+    public String getAdvice(){
+        return this.adviceService.getAdvice();
+    }
 }

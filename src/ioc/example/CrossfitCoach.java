@@ -5,4 +5,9 @@ public class CrossfitCoach implements ICoaching {
     public String getWorkout() {
         return "Go directly to Snap City";
     }
+
+    @Override
+    public String getAdvice() {
+        return null;
+    }
 }
