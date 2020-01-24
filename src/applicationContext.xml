@@ -12,5 +12,7 @@
     <bean id="zumbaCoach"
           class="ioc.example.ZumbaCoach ">
             <property name="adviceService" ref="adviceService"/>
+            <property name="email" value="yogapants@soy.se"/>
+            <property name="bicepCircumference" value="12"/>
     </bean>
 </beans>
