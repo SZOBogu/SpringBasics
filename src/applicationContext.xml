@@ -4,6 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="coach"
           class="ioc.example.WeightliftingCoach">
+            <constructor-arg ref="adviceService"/>
      </bean>
-
+    <bean id="adviceService"
+          class="ioc.example.GoodAdvice">
+    </bean>
 </beans>
