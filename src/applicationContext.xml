@@ -3,10 +3,14 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="coach"
-          class="ioc.example.WeightliftingCoach">
+          class="ioc.example.CrossfitCoach">
             <constructor-arg ref="adviceService"/>
      </bean>
     <bean id="adviceService"
-          class="ioc.example.GoodAdvice">
+          class="ioc.example.BadAdvice ">
+    </bean>
+    <bean id="zumbaCoach"
+          class="ioc.example.ZumbaCoach ">
+            <property name="adviceService" ref="adviceService"/>
     </bean>
 </beans>

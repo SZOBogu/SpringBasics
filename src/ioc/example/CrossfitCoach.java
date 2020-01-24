@@ -1,6 +1,13 @@
 package ioc.example;
 
 public class CrossfitCoach implements ICoaching {
+
+    private IAdviceService adviceService;
+
+    public CrossfitCoach(IAdviceService adviceService){
+        this.adviceService = adviceService;
+    }
+
     @Override
     public String getWorkout() {
         return "Go directly to Snap City";
@@ -8,6 +15,6 @@ public class CrossfitCoach implements ICoaching {
 
     @Override
     public String getAdvice() {
-        return null;
+        return adviceService.getAdvice();
     }
 }
