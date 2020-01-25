@@ -11,6 +11,14 @@
             <constructor-arg ref="adviceServiceLifeCycle"/>
      </bean>
 
+    <bean id="coachLifeCyclePrototype"
+          class="common.WeightliftingCoach"
+          init-method="init"
+          destroy-method="destroy"
+          scope="prototype">
+        <constructor-arg ref="adviceServiceLifeCycle"/>
+    </bean>
+
     <bean id="adviceServiceLifeCycle"
           class="common.GoodAdvice ">
     </bean>
