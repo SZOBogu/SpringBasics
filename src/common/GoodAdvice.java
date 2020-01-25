@@ -1,4 +1,4 @@
-package ioc.example;
+package common;
 
 import java.util.ArrayList;
 import java.util.Random;

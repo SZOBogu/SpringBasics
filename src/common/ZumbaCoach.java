@@ -1,4 +1,4 @@
-package ioc.example;
+package common;
 
 public class ZumbaCoach implements ICoaching {
 

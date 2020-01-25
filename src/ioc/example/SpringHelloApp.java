@@ -1,5 +1,7 @@
 package ioc.example;
 
+import common.ICoaching;
+import common.ZumbaCoach;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SpringHelloApp {

@@ -5,15 +5,15 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
     <context:property-placeholder location="classpath:sport.properties"/>
 
-    <bean id="coach"
-          class="ioc.example.CrossfitCoach">
+    <bean id="coachScope"
+          class="common.CrossfitCoach">
             <constructor-arg ref="adviceService"/>
      </bean>
-    <bean id="adviceService"
-          class="ioc.example.GoodAdvice ">
+    <bean id="adviceServiceScope"
+          class="common.GoodAdvice ">
     </bean>
     <bean id="zumbaCoach"
-          class="ioc.example.ZumbaCoach ">
+          class="common.ZumbaCoach ">
             <property name="adviceService" ref="adviceService"/>
             <property name="email" value="${foo.email}"/>
             <property name="bicepCircumference" value="${foo.bicepCircumference}"/>

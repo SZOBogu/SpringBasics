@@ -5,6 +5,8 @@
       <configuration>
         <fileset id="fileset" name="AppilcationContext" removed="false">
           <file>file://$MODULE_DIR$/src/appilcationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/beanApplicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/applicationContext.xml</file>
         </fileset>
       </configuration>
     </facet>
