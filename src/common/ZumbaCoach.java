@@ -1,5 +1,7 @@
 package common;
 
+import org.springframework.stereotype.Component;
+
 public class ZumbaCoach implements ICoaching {
 
     private IAdviceService adviceService;
