@@ -2,12 +2,15 @@ package AnnotationBasics;
 
 import common.IAdviceService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component("TomekH")
 public class FootballCoach implements common.ICoaching {
-    @Autowired
+
     private IAdviceService adviceService;
+
+    public FootballCoach(){System.out.println("dai! dai! dai!");}
 
     public FootballCoach(IAdviceService adviceService){
         this.adviceService = adviceService;
@@ -23,6 +26,8 @@ public class FootballCoach implements common.ICoaching {
         return adviceService.getAdvice();
     }
 
+    @Autowired
+    @Qualifier("notEvenAnAdvice")
     public void setAdviceService(IAdviceService adviceService) {
         this.adviceService = adviceService;
     }

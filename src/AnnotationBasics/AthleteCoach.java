@@ -3,6 +3,7 @@ package AnnotationBasics;
 import common.IAdviceService;
 import common.ICoaching;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component("JeffCavaliereAthleanXDotCom")
@@ -26,6 +27,7 @@ public class AthleteCoach implements ICoaching {
     }
 
     @Autowired
+    @Qualifier("unrelatedAdvice")
     public void setAdviceService(IAdviceService adviceService) {
         this.adviceService = adviceService;
     }
