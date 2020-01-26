@@ -1,4 +1,4 @@
-package AnnotationBasics;
+package annotationBasics.example;
 
 import common.IAdviceService;
 import common.ICoaching;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class AthleteCoach implements ICoaching {
     private IAdviceService adviceService;
 
-    public AthleteCoach(){System.out.println("what's up guys");}
+    public AthleteCoach(){}
 
     public AthleteCoach(IAdviceService adviceService){
         this.adviceService = adviceService;

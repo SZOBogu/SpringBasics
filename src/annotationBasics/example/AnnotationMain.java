@@ -1,4 +1,4 @@
-package AnnotationBasics;
+package annotationBasics.example;
 
 import common.ICoaching;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -7,7 +7,7 @@ public class AnnotationMain {
     public static void main(String[] args){
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("annotationApplicationContext.xml");
 
-        ICoaching coach = context.getBean("TomekH", ICoaching.class);
+        ICoaching coach = context.getBean("footballCoach", ICoaching.class);
         System.out.println(coach.getWorkout());
         System.out.println(coach.getAdvice());
 

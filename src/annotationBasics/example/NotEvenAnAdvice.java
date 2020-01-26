@@ -1,4 +1,4 @@
-package AnnotationBasics;
+package annotationBasics.example;
 
 import common.IAdviceService;
 import org.springframework.stereotype.Component;
