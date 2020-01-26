@@ -9,7 +9,8 @@ import org.springframework.stereotype.Component;
 public class AthleteCoach implements ICoaching {
     private IAdviceService adviceService;
 
-    @Autowired
+    public AthleteCoach(){System.out.println("what's up guys");}
+
     public AthleteCoach(IAdviceService adviceService){
         this.adviceService = adviceService;
     }
@@ -22,5 +23,10 @@ public class AthleteCoach implements ICoaching {
     @Override
     public String getAdvice() {
         return this.adviceService.getAdvice() ;
+    }
+
+    @Autowired
+    public void setAdviceService(IAdviceService adviceService) {
+        this.adviceService = adviceService;
     }
 }
