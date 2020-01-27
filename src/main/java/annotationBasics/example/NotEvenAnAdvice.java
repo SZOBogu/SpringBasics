@@ -17,7 +17,7 @@ public class NotEvenAnAdvice implements IAdviceService {
         Random random = new Random();
 
         try{
-            File file = new File("src/advices.txt");
+            File file = new File("src/main/resources/advices.txt");
             Scanner scanner = new Scanner(file);
             while(scanner.hasNextLine()) {
                 advices.add(scanner.nextLine());
