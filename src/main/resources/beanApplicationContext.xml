@@ -5,15 +5,15 @@
 
 
     <bean id="coachScope"
-          class="common.WeightliftingCoach">
+          class="basics.common.WeightliftingCoach">
             <constructor-arg ref="adviceServiceScope"/>
      </bean>
     <bean id="instructor"
-          class="common.CrossfitCoach"
+          class="basics.common.CrossfitCoach"
           scope="prototype">
         <constructor-arg ref="adviceServiceScope"/>
     </bean>
     <bean id="adviceServiceScope"
-          class="common.GoodAdvice ">
+          class="basics.common.GoodAdvice ">
     </bean>
 </beans>

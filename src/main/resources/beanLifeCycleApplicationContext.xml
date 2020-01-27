@@ -4,14 +4,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="coachLifeCycle"
-          class="common.WeightliftingCoach"
+          class="basics.common.WeightliftingCoach"
             init-method="init"
             destroy-method="destroy">
             <constructor-arg ref="adviceServiceLifeCycle"/>
      </bean>
 
     <bean id="coachLifeCyclePrototype"
-          class="common.WeightliftingCoach"
+          class="basics.common.WeightliftingCoach"
           init-method="init"
           destroy-method="destroy"
           scope="prototype">
@@ -19,6 +19,6 @@
     </bean>
 
     <bean id="adviceServiceLifeCycle"
-          class="common.GoodAdvice ">
+          class="basics.common.GoodAdvice ">
     </bean>
 </beans>
